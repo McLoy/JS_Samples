@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS Sample data valid</title>
+</head>
+<body>
+    <p>Enter digit from 1 to 200</p>
+
+    <input id="number" type="text">
+
+    <button type="button" onclick="myFunction()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function myFunction(){
+            var number, result;
+
+            number = document.getElementById('number').value;
+
+            if (isNaN(number) || number < 1 || number > 200){
+                result = "Digit uncorrect";
+            } else {
+                result = "Digit correct";
+            }
+
+            document.getElementById('result').innerHTML = result;
+        }
+
+    </script>
+</body>
+</html>
