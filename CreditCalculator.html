@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Credit calculator</title>
+    <style type="text/css">
+        table {
+            width: 400px;
+        }
+        td, th {
+            text-align: left;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body style="background-color:LightGray;">
+    <p>Calculate your credit</p>
+
+    <table id="'table">
+        <tr><th>Amount of money:</th><th><input id="summ" type="text"></th></tr>
+        <tr><th>Credit time(months):</th><th><input id="time" type="text"></th></tr>
+        <tr><th>Credit percent (per year):</th><th><input id="percent" type="text"><br></th></tr>
+
+    </table>
+
+    <button type="button" onclick="myFunction()">Calculate</button>
+
+    <hr>
+
+    <p id="result">Please enter values higher for calculating</p>
+
+    <script>
+
+        function myFunction(){
+
+            var summ, time, percent, result;
+
+            summ = document.getElementById('summ').value;
+            time = document.getElementById('time').value;
+            percent = document.getElementById('percent').value;
+
+            result = 'Your monthly earn: ' + (percent*summ/100 + summ)/time;
+
+            document.getElementById('result').innerHTML = result;
+
+        }
+
+    </script>
+
+</body>
+</html>
