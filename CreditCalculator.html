@@ -17,13 +17,12 @@
     <p>Calculate your credit</p>
 
     <table id="'table">
-        <tr><th>Amount of money:</th><th><input id="summ" type="text"></th></tr>
+        <tr><th>Amount of money($):</th><th><input id="summ" type="text"></th></tr>
         <tr><th>Credit time(months):</th><th><input id="time" type="text"></th></tr>
-        <tr><th>Credit percent (per year):</th><th><input id="percent" type="text"><br></th></tr>
+        <tr><th>Credit percent per year(%):</th><th><input id="percent" type="text"><br></th></tr>
+        <tr><th></th><th><button type="button" onclick="myFunction()">Calculate</button></th></tr>
 
     </table>
-
-    <button type="button" onclick="myFunction()">Calculate</button>
 
     <hr>
 
@@ -39,7 +38,7 @@
             time = parseFloat(document.getElementById('time').value);
             percent = parseFloat(document.getElementById('percent').value);
 
-            result = (summ*percent/100 + summ)/time;
+            result = (summ*percent/12/100*time + summ)/time;
 
             result = result.toFixed(2);
 
