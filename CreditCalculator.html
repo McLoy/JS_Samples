@@ -38,11 +38,18 @@
             time = parseFloat(document.getElementById('time').value);
             percent = parseFloat(document.getElementById('percent').value);
 
-            result = (summ*percent/12/100*time + summ)/time;
+            if (isNaN(summ) || isNaN(time) || isNaN(percent)){
+                alert("Enter all values before calculating");
+            } else {
+                result = (summ*percent/12/100*time + summ)/time;
 
-            result = result.toFixed(2);
+                result = result.toFixed(2);
+                result = 'Your monthly installment: ' + result + ' $';
 
-            document.getElementById('result').innerHTML = 'Your monthly installment: ' + result + ' $';
+                document.getElementById('result').innerHTML = result;
+
+                alert(result);
+            }
 
         }
 
