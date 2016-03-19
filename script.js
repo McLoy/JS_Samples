@@ -4,3 +4,5 @@
 function myFunction(){
     document.getElementById('paragraph').innerHTML = "Привет JS";
 }
+
+

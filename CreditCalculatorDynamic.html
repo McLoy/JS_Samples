@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Credit calculator</title>
+    <style type="text/css">
+        table {
+            width: 400px;
+        }
+        td, th {
+            text-align: left;
+            padding: 3px;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="script2.js"></script>
+</head>
+<body style="background-color:LightGray;">
+    <p>Calculate your credit</p>
+
+    <table id="'table">
+        <tr><th>Amount of money($):</th><th><input id="summ" type="number"></th></tr>
+        <tr><th>Credit time(months):</th><th><input id="time" type="number"></th></tr>
+        <tr><th>Credit percent per year(%):</th><th><input id="percent" type="number"><br></th></tr>
+        <!--<tr><th></th><th><button type="button" onclick="myFunction()">Calculate</button></th></tr>-->
+
+    </table>
+
+    <hr>
+
+    <div id="result">Please enter values higher for calculating</div>
+
+    <!--<script>-->
+
+        <!--function myFunction(){-->
+
+            <!--var summ, time, percent, result;-->
+
+            <!--summ = parseFloat(document.getElementById('summ').value);-->
+            <!--time = parseFloat(document.getElementById('time').value);-->
+            <!--percent = parseFloat(document.getElementById('percent').value);-->
+
+            <!--if (isNaN(summ) || isNaN(time) || isNaN(percent)){-->
+                <!--alert("Enter all values before calculating");-->
+            <!--} else {-->
+                <!--result = (summ*percent/12/100*time + summ)/time;-->
+
+                <!--result = result.toFixed(2);-->
+                <!--result = 'Your monthly installment: ' + result + ' $';-->
+
+                <!--document.getElementById('result').innerHTML = result;-->
+
+                <!--alert(result);-->
+            <!--}-->
+
+        <!--}-->
+
+    <!--</script>-->
+
+</body>
+</html>
