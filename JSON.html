@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Untitled</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+        $(function(){
+            var data = {
+                "0":{
+                    "id":"1",
+                    "country":"181",
+                    "city":"Санкт-Петербург",
+                    "city_en":"St. Petersburg"
+                },
+
+                "1":{
+                    "id":"2",
+                    "country":"181",
+                    "city":"Москва",
+                    "city_en":"Moscow"
+                },
+
+                "2":{
+                    "id":"3",
+                    "country":"0",
+                    "city":"Другой",
+                    "city_en":"Another"
+                },
+
+                "3":{
+                    "id":"4",
+                    "country":"181",
+                    "city":"Екатеринбург",
+                    "city_en":"Yekaterinburg"
+                },
+
+                "4":{
+                    "id":"5",
+                    "country":"181",
+                    "city":"Казань",
+                    "city_en":"Kazan"
+                },
+
+                "5":{
+                    "id":"6",
+                    "country":"232",
+                    "city":"Киев",
+                    "city_en":"Kiev"
+                },
+
+                "6":{
+                    "id":"7",
+                    "country":"232",
+                    "city":"Донецк",
+                    "city_en":"Donetsk"
+                },
+
+                "7":{
+                    "id":"8",
+                    "country":"232",
+                    "city":"Львов",
+                    "city_en":"Lviv"
+                },
+
+                "8":{
+                    "id":"9",
+                    "country":"232",
+                    "city":"Харьков",
+                    "city_en":"Kharkiv"
+                },
+
+                "9":{
+                    "id":"10",
+                    "country":"181",
+                    "city":"Симферополь",
+                    "city_en":"Simferopol"
+                },
+
+                "10":{
+                    "id":"11",
+                    "country":"181",
+                    "city":"Самара",
+                    "city_en":"Samara"
+                },
+
+                "11":{
+                    "id":"12",
+                    "country":"23",
+                    "city":"Минск",
+                    "city_en":"Minsk"
+                },
+
+                "12":{
+                    "id":"13",
+                    "country":"23",
+                    "city":"Витебск",
+                    "city_en":"Vitebsk"
+                },
+
+                "13":{
+                    "id":"14",
+                    "country":"23",
+                    "city":"Могилев",
+                    "city_en":"Mogilev"
+                },
+
+                "14":{
+                    "id":"15",
+                    "country":"23",
+                    "city":"Гомель",
+                    "city_en":"Gomel"
+                },
+
+                "15":{
+                    "id":"16",
+                    "country":"23",
+                    "city":"Брест",
+                    "city_en":"Brest"
+                },
+
+                "16":{
+                    "id":"17",
+                    "country":"255",
+                    "city":"Таллин",
+                    "city_en":"Tallinn"
+                },
+
+                "17":{
+                    "id":"18",
+                    "country":"255",
+                    "city":"Тарту",
+                    "city_en":"Tartu"
+                },
+
+                "18":{
+                    "id":"19",
+                    "country":"117",
+                    "city":"Рига",
+                    "city_en":"Riga"
+                },
+
+                "19":{
+                    "id":"20",
+                    "country":"117",
+                    "city":"Даугавпилс",
+                    "city_en":"Daugavpils"
+                },
+
+                "20":{
+                    "id":"21",
+                    "country":"122",
+                    "city":"Вильнюс",
+                    "city_en":"Vilnius"
+                },
+
+                "21":{
+                    "id":"22",
+                    "country":"122",
+                    "city":"Клайпеда",
+                    "city_en":"Klaipeda"
+                },
+
+                "22":{
+                    "id":"23",
+                    "country":"181",
+                    "city":"Ростов",
+                    "city_en":"Rostov"
+                },
+
+                "23":{
+                    "id":"24",
+                    "country":"181",
+                    "city":"Омск",
+                    "city_en":"Omsk"
+                },
+
+                "24":{
+                    "id":"25",
+                    "country":"181",
+                    "city":"Новосибирск",
+                    "city_en":"Novosibirsk"
+                },
+
+                "25":{
+                    "id":"26",
+                    "country":"181",
+                    "city":"Нижний Новгород",
+                    "city_en":"Nizhny Novgorod"
+                }
+            }
+            $.each(data, function(index, data){
+                $('.city_all.text_shad ul').append('<li>' + data['city'] + '</li>');
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+<div class='city_all text_shad'><ul></ul></div>
+
+</body>
+
+</html>
