@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Изменение атрибута изображения</title>
+</head>
+<body>
+    <img src="images/audi1.jpg" alt="Авто" id="image" onclick="changeImage()">
+
+    <script>
+        function changeImage(){
+            var image = document.getElementById('image');
+
+            if (image.src.match("audi1")){
+                image.src = "images/audi2.jpg";
+            } else {
+                image.src = "images/audi1.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
