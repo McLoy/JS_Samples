@@ -32,7 +32,7 @@
 
         function myFunction(){
 
-            var summ, time, percent;
+            var summ, time, percent, result;
 
             summ = parseFloat(document.getElementById('summ').value);
             time = parseFloat(document.getElementById('time').value);
@@ -42,7 +42,7 @@
 
             result = result.toFixed(2);
 
-            document.getElementById('result').innerHTML = 'Your monthly installment: ' + result;
+            document.getElementById('result').innerHTML = 'Your monthly installment: ' + result + ' $';
 
         }
 
