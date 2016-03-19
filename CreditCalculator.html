@@ -33,15 +33,17 @@
 
         function myFunction(){
 
-            var summ, time, percent, result;
+            var summ, time, percent;
 
-            summ = document.getElementById('summ').value;
-            time = document.getElementById('time').value;
-            percent = document.getElementById('percent').value;
+            summ = parseFloat(document.getElementById('summ').value);
+            time = parseFloat(document.getElementById('time').value);
+            percent = parseFloat(document.getElementById('percent').value);
 
-            result = 'Your monthly earn: ' + (percent*summ/100 + summ)/time;
+            result = (summ*percent/100 + summ)/time;
 
-            document.getElementById('result').innerHTML = result;
+            result = result.toFixed(2);
+
+            document.getElementById('result').innerHTML = 'Your monthly installment: ' + result;
 
         }
 
